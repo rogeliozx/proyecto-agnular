@@ -1,0 +1,138 @@
+@font-face{
+    font-family: "yanone";
+    src: url("./fonts/yanone.ttf");
+}
+@font-face{
+    font-family: "finger";
+    src: url("./fonts/finger.ttf");
+}
+@font-face{
+    font-family: "titilium";
+    src: url("./fonts/titilium.ttf");
+}
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+body{
+    font-family: "yanone","finger","titilium";
+    font-size: 1.3vw;
+    background: url(../img/back3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+/*Barrar de navegacion*/
+header{
+    display: block;
+    width: 100% !important;
+    height: 8vw;
+    background:rgba(242, 38, 19, 0.5);
+    position: fixed;
+    text-transform: uppercase;
+    margin-top: -1.2vw;
+}
+header ul{
+    display: block;
+    width: 38%;
+    height: inherit;
+    margin:0px auto;
+    margin-top: -0.3%;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 8vw;
+}
+header a{
+display: block;
+padding-right: 1.2vw;
+padding-left: 1.2vw;
+height: inherit;
+text-decoration: none;
+color: white;
+transition: all 300ms;
+}
+header a:hover,.active{
+    background:#8A0707;
+}
+/*logotipo*/
+#logo{
+    font-family: 'Metal Mania', cursive;
+    font-size: 2vw;
+}
+#logo a{
+transition: transform 500ms, color 500ms;
+}
+ #logo a:hover{
+    background: transparent;
+    cursor:context-menu;
+    color:#8A0707;
+    transform: scale(1.50,1.50);
+}
+/*Contenedor principal*/
+#content{
+    min-height: 40vw;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 0 0 4px #00000054;
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    padding-top: 10vw;
+
+
+}
+/*Pie de pagina*/
+footer{
+    width: 75%;
+    margin: 0 auto;
+    padding: 1vw;
+ color:rgba(251, 251, 251, 0.5);
+
+}
+/*Sobre mi*/
+#title{
+    width: 70%;
+    margin:0 auto;
+    text-align: center;
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+}
+#title h1{
+    font-family: "finger";
+    font-size: 5vw;
+    border-bottom: 2px solid #8A0707;
+    padding-bottom: 5px;
+    margin-bottom: 0vw;
+}
+#title h2{
+    font-size: 2vw;
+    color: gray;
+    margin-top: 0.4vw;
+    margin-bottom: 0.4vw;
+}
+#title p{
+    color: gray;
+    margin: 0 auto;
+}
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 1.5vw;
+    font-size: 1.2vw;
+}
+.about h2{
+    border-bottom: 2px solid  #8A0707;
+    padding-bottom: 0.4vw;
+    margin-bottom: 0.4vw;
+}
+.about p{
+    font-size: 1.2vw;
+    font-family: 'Metal Mania', cursive;
+    padding-top: 0.5vw;
+    padding-bottom: 1.5vw;
+    text-align: justify;
+}

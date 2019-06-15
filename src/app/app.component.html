@@ -1,0 +1,16 @@
+
+<header>
+<ul >
+  <li><a [routerLink]="['/sombre-mi']" [routerLinkActive]="['active']">Sobre mi</a> </li>
+  <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['active']">Proyecto</a> </li>
+  <li id="logo"><a href="#">RR</a></li>
+  <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['active']">Crear proyecto</a> </li>
+  <li><a [routerLink]="['/contacto']" [routerLinkActive]="['active']">Contacto</a> </li>
+</ul>
+</header>
+<section id="content">
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  Desarrollador web Rogelio Romero &copy;
+</footer>

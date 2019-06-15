@@ -1,0 +1,21 @@
+/*Seccion con formulario*/
+.container{
+    padding: 4vw;
+    padding-top: 0.8vw;
+
+
+}
+.container h2{
+    display: block;
+    border-bottom: 2px solid #8A0707;
+    padding-bottom: 0.9vw;
+    margin-bottom: 1vw;
+}
+form{
+    width: 50%;
+
+}
+form label{
+    width: 100%;
+
+}
