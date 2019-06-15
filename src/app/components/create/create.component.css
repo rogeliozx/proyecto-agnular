@@ -12,10 +12,49 @@
     margin-bottom: 1vw;
 }
 form{
-    width: 50%;
+    width: 80%;
 
 }
 form label{
+    display: block;
     width: 100%;
+margin-top: 1.5vw;
+margin-bottom: 0.3vw;
 
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+textarea{
+    width: 40%;
+    padding: 0.3vw;
+}
+form input[type="submit"],
+button{
+    display:block;
+    font-size: 1.1vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    color: white;
+    background: #8A0707;
+    border: 1px solid #320303;
+    cursor: pointer;
+}
+form input[disabled]{
+   opacity: 0.4;
+   cursor: not-allowed;
+}
+form input[type="submit"]:hover,
+button:hover{
+
+    background: #8a0707ba;
+   
+}
+.form-error{
+    font-size: 1vw;
+    padding: 3px;
+    background: red;
+    color: white;
+    margin-left: 5px;
 }
