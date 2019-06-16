@@ -15,4 +15,9 @@ export class ProjectServices{
     testServices(){
         return 'Probando las cosas';
     }
+    saveProject(project:Project):Observable<any>{
+        let params=JSON.stringify(project);
+        let headers=new HttpHeaders().set('Content-Types','application/json');
+        return this._http.post(this.url+'save-project',params,{headers:headers});
+    }
 }

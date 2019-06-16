@@ -22,7 +22,15 @@ public project:Project;
   ngOnInit() {
   }
   onSubmit(form){
-    console.log( this.project);
+    
+    this._projectServices.saveProject(this.project).subscribe(
+      response=>{
+        console.log(response);
+      },error=>{
+        console.log(<any>error)
+      }
+
+    );
   }
 
 }
