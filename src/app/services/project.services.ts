@@ -17,7 +17,8 @@ export class ProjectServices{
     }
     saveProject(project:Project):Observable<any>{
         let params=JSON.stringify(project);
-        let headers=new HttpHeaders().set('Content-Types','application/json');
+        let headers=new HttpHeaders().set('Content-Type','application/json');
+        console.log(headers)
         return this._http.post(this.url+'save-project',params,{headers:headers});
     }
 }

@@ -58,3 +58,22 @@ button:hover{
     color: white;
     margin-left: 5px;
 }
+.message{
+    width: 50%;
+    padding: 0.3vw;
+border: 1px solid #eee;
+
+}
+.success{
+    background: green;
+    color: whitesmoke;
+
+}
+.message a{
+    color: whitesmoke;
+}
+.failed{
+    background: red;
+    color:white;
+
+}
