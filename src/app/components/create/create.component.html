@@ -1,7 +1,7 @@
 <section class="container">
 <h2>{{title}}</h2>
 <div  class='success message' *ngIf='status=="success" '>
-El proyecto fue creado exitosamente, puedes verificar <a href="#">aqui</a>
+El proyecto fue creado exitosamente, puedes verificar <a [routerLink]="['/proyecto',save._id]">aqui</a>
 </div>
 <div  class='message failed' *ngIf='status=="failed"'>
   El proyecto a fallado en guardarse
@@ -20,17 +20,17 @@ El proyecto fue creado exitosamente, puedes verificar <a href="#">aqui</a>
   <textarea type="text" name="description"  required
   #description="ngModel" [(ngModel)]="project.description" ></textarea>
   <span class="form-error" *ngIf="description.touched && !description.valid">
-    La descripcion es obligatoria
+    La descripción es obligatoria
   </span>
 </p>
 
 <p>
-  <label for="category">Categoria</label>
+  <label for="category">Categoría</label>
   <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category"
   required
   />
   <span class="form-error" *ngIf="category.touched && !category.valid">
-    La categoria es obligatoria
+    La categoría es obligatoria
   </span>
 </p>
 <p>
@@ -51,7 +51,11 @@ El proyecto fue creado exitosamente, puedes verificar <a href="#">aqui</a>
 
 <p>
   <label for="image">Imagen del Proyecto</label>
-  <input type="file" name="image" placeholder="Subir Imagen"/>
+  <span class='images' *ngIf="project.image" >
+    <img src="{{url}}imagenes/{{project.image}}" *ngIf="project.image" />
+    <br><br>
+  </span>
+  <input type="file" name="image" placeholder="Subir Imagen" (change)="fileChangeEvent($event)"/>
 </p>
 <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid"/>
 </form>

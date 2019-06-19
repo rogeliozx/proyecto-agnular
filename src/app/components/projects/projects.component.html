@@ -1,3 +1,15 @@
-<p>
-  projects works!
-</p>
+<section  class='container'>
+  <h2>Proyectos</h2>
+  <ul>
+   
+    <li *ngFor="let project of projects" class="project">
+      <a [routerLink]="['/proyecto', project._id]"> 
+      <h3>{{project.name}}</h3><p>  {{project.category}}</p>
+    <div class='images' >
+        <img src="{{url}}imagenes/{{project.image}}" *ngIf="project.image"/>
+    </div>
+    
+    </a>
+    </li>
+  </ul>
+</section>

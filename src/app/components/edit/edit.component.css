@@ -1,0 +1,83 @@
+/*Seccion con formulario*/
+.container{
+    padding: 4vw;
+    padding-top: 0.8vw;
+
+
+}
+.container h2{
+    display: block;
+    border-bottom: 2px solid #8A0707;
+    padding-bottom: 0.9vw;
+    margin-bottom: 1vw;
+}
+form{
+    width: 80%;
+
+}
+form label{
+    display: block;
+    width: 100%;
+margin-top: 1.5vw;
+margin-bottom: 0.3vw;
+
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+textarea{
+    width: 40%;
+    padding: 0.3vw;
+}
+form input[type="submit"],
+button{
+    display:block;
+    font-size: 1.1vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    color: white;
+    background: #8A0707;
+    border: 1px solid #320303;
+    cursor: pointer;
+}
+form input[disabled]{
+   opacity: 0.4;
+   cursor: not-allowed;
+}
+form input[type="submit"]:hover,
+button:hover{
+
+    background: #8a0707ba;
+   
+}
+.form-error{
+    font-size: 1vw;
+    padding: 3px;
+    background: red;
+    color: white;
+    margin-left: 5px;
+}
+.message{
+    width: 50%;
+    padding: 0.3vw;
+border: 1px solid #eee;
+
+}
+.success{
+    background: green;
+    color: whitesmoke;
+
+}
+.message a{
+    color: whitesmoke;
+}
+.failed{
+    background: red;
+    color:white;
+
+}
+.images img{
+width: 50%;
+height: 18vw;
+}

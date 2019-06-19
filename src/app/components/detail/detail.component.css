@@ -1,0 +1,50 @@
+.container{
+    padding: 4vw;
+    padding-top: 0.8vw;
+
+
+}
+.container h3{
+    display: block;
+    
+    padding-bottom: 0.9vw;
+    margin-bottom: 1vw;
+}
+.container .images{
+    float: left;
+    width: 49%;
+}
+.container .data{
+    float: left;
+    width: 49%;
+    margin-left: 1.2vw;
+}
+.images{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+}
+.images img{
+    width:100%;
+
+}
+.button-edit,
+.button-delete{
+    display:block;
+    width: 20%;
+    font-size: 1.1vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    color: white;
+    background: #8A0707;
+    border: 1px solid #320303;
+    cursor: pointer;
+    float: left;
+    margin-right: 1vw;
+    text-decoration: none;
+border: 1px solid black;
+    
+}
+.button-edit{
+    background: blue;
+}

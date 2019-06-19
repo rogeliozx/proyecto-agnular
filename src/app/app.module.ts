@@ -9,8 +9,12 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { EditComponent } from './components/edit/edit.component';
+import { DetailComponent } from './components/detail/detail.component';
 //Ruter
 import {appRoutingProviders,routing  } from "./app.routing";
+
+
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import {appRoutingProviders,routing  } from "./app.routing";
     ProjectsComponent,
     CreateComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
+    DetailComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
