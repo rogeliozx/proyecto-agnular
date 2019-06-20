@@ -13,12 +13,14 @@ import { Router, ActivatedRoute, Params } from "@angular/router";
 export class DetailComponent implements OnInit {
   public url: string;
   public project: Project;
+  public confirm: boolean;
   constructor(
     private _projectServices: ProjectServices,
     private _router: Router,
     private _route: ActivatedRoute
   ) {
     this.url = Global.url;
+    this.confirm = false;
   }
 
   ngOnInit() {
@@ -34,11 +36,14 @@ export class DetailComponent implements OnInit {
       console.log(error);
     })
   }
-  deleteProject(id){
-this._projectServices.deleteProject(id).subscribe(response=>{
+  deleteProject(id) {
+    this._projectServices.deleteProject(id).subscribe(response => {
 
-  this._router.navigate(['/proyectos'])
+      this._router.navigate(['/proyectos'])
 
-},error=>console.log(<any>error))
+    }, error => console.log(<any>error))
+  }
+  setConfirm(confirm) {
+    this.confirm = confirm;
   }
 }

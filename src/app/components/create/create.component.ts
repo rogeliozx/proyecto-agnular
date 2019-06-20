@@ -34,15 +34,22 @@ public save:string;
         if(response.project){
           
           //subir la imagen
+          if(this.filesToUpload){
+
+        
           this._uploadService.makeFileRequest(Global.url+"upload-image/"+response.project._id,[],this.filesToUpload,'image')
           .then((result:any)=>
           {
             this.status='success';
             this.save=result.project;
-            console.log(this.save)
+           
             form.reset();
           });
-         
+        }else{
+          this.status='success';
+            this.save=response.project;
+           
+        }
         }else{
           this.status='failed';
         }

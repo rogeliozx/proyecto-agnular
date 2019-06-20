@@ -31,7 +31,8 @@
 .button-edit,
 .button-delete{
     display:block;
-    width: 20%;
+    width: 30%;
+    text-align: center;
     font-size: 1.1vw;
     padding: 1vw;
     margin-top: 1vw;
@@ -47,4 +48,9 @@ border: 1px solid black;
 }
 .button-edit{
     background: blue;
+}
+.confirm{
+    display: block;
+    font-weight: bold;
+    margin-top: 1.3vw;
 }
