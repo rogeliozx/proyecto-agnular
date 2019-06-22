@@ -137,3 +137,7 @@ article.about{
     padding-bottom: 1.5vw;
     text-align: justify;
 }
+.bx-wrapper{
+    align-items: center;
+    margin: 0 auto !important;
+}

@@ -13,6 +13,8 @@ import { EditComponent } from './components/edit/edit.component';
 import { DetailComponent } from './components/detail/detail.component';
 //Ruter
 import {appRoutingProviders,routing  } from "./app.routing";
+import { SliderComponent } from './components/slider/slider.component';
+import { ResaltadoDirective } from './resaltado.directive';
 
 
 
@@ -25,7 +27,9 @@ import {appRoutingProviders,routing  } from "./app.routing";
     ContactComponent,
     ErrorComponent,
     DetailComponent,
-    EditComponent
+    EditComponent,
+    SliderComponent,
+    ResaltadoDirective
   ],
   imports: [
     BrowserModule,
